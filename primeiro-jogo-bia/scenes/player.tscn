@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b5oa45vd23rkr"]
+
+[ext_resource type="Script" uid="uid://ebok7yfe2674" path="res://scenes/script.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://dp8ofcbp8sqcq" path="res://assets/kenney_platformer-art-deluxe/Base pack/Player/p1_front.png" id="2_qhqgy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dqkch"]
+size = Vector2(70, 94)
+
+[node name="player" type="CharacterBody2D" unique_id=1603518562]
+script = ExtResource("1_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1044151921]
+position = Vector2(-2, 1)
+texture = ExtResource("2_qhqgy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1607916896]
+position = Vector2(-1, 2)
+shape = SubResource("RectangleShape2D_dqkch")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2077335943]
