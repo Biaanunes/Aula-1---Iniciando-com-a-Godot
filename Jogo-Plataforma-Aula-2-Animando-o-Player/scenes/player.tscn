@@ -89,3 +89,5 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_f1ej7")
 animation = &"jump"
 frame_progress = 0.11713303
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1067774284]
