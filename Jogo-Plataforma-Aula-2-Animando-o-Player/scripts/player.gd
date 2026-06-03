@@ -4,7 +4,13 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -800.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@export var posicao_inicial: Vector2 = Vector2(150,80)
 
+func _ready() -> void:
+	print("Player criado!")
+	var vidas := 200
+	print("vidas: "+ str(vidas))
+	position = posicao_inicial
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
